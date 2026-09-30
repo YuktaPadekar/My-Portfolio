@@ -23,3 +23,20 @@ Personal portfolio website showcasing my education, skills, projects, and work.
 ## Deployment
 
 The portfolio is deployed using GitHub Pages.
+The project is maintained using Git with incremental commits and synchronized through GitHub.
+
+## Project Structure
+
+```text
+My-Portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── .gitignore
+
+
+
+
+
+
