@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukta Padekar | Portfolio</title>
+    <meta name="description" content="Portfolio of Yukta Padekar - Computer Engineering Student, Full Stack Developer, and AI Enthusiast.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="#" class="nav-brand">Yukta<span>.</span></a>
+        
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#education-skills" class="nav-item">Education & Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+            <li><a href="#contact" class="nav-btn">👋 Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Header Section -->
+    <header class="hero" id="home">
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                <span>Open to Opportunities</span>
+            </div>
+            
+            <h1>Hi, I'm <span class="gradient-text">Yukta Padekar</span> 👋</h1>
+            
+            <div class="hero-subtitle-wrapper">
+                <p class="hero-subtitle">
+                    <span id="typing-text"></span><span class="typing-cursor">|</span>
+                </p>
+            </div>
+            
+            <p class="hero-desc">
+                Computer Engineering student passionate about Full Stack Development, practical AI solutions, and building scalable software.
+            </p>
+            
+            <div class="hero-cta">
+                <button onclick="scrollToSection('projects')" class="btn btn-primary">
+                    🚀 View Projects
+                </button>
+                <button onclick="scrollToSection('contact')" class="btn btn-secondary">
+                    📬 Let's Connect
+                </button>
+                <a href="https://github.com/YuktaPadekar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    🐙 GitHub
+                </a>
+            </div>
+            
+            <div class="hero-highlights">
+                <div class="highlight-item">
+                    <span>🎓</span> B.E. Computer Engineering
+                </div>
+                <div class="highlight-item">
+                    <span>🏛️</span> Vidyalankar Institute of Technology
+                </div>
+                <div class="highlight-item">
+                    <span>💻</span> Full Stack & AI Systems
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">👩‍💻 Overview</span>
+                <h2>About Me</h2>
+                <p>Passionate about solving real-world problems through clean code and modern technologies.</p>
+            </div>
+
+            <div class="about-card-single card reveal">
+                <div class="about-points-grid">
+                    <div class="about-point-item">
+                        <div class="about-point-icon">💻</div>
+                        <div>
+                            <h4>Full Stack Web Development</h4>
+                            <p>Building responsive, user-friendly frontend applications and scalable backend APIs.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point-item">
+                        <div class="about-point-icon">🤖</div>
+                        <div>
+                            <h4>Applied AI & Machine Learning</h4>
+                            <p>Integrating predictive machine learning models with explainability for real-world impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-point-item">
+                        <div class="about-point-icon">⚙️</div>
+                        <div>
+                            <h4>Core Engineering Fundamentals</h4>
+                            <p>Strong foundations in Operating Systems, Database Management Systems, and Data Structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Skills Section -->
+    <section id="education-skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🎓 Academics & Skills</span>
+                <h2>Education & Skills</h2>
+                <p>My academic background and technical competencies.</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Education Card -->
+                <div class="card reveal">
+                    <h3 class="card-title">
+                        <span class="card-icon">🎓</span>
+                        Education
+                    </h3>
+                    
+                    <div class="education-item">
+                        <div class="education-degree">
+                            <span>B.E. Computer Engineering</span>
+                            <span class="edu-badge">Undergraduate</span>
+                        </div>
+                        <div class="education-institution">
+                            <span>🏛️</span> Vidyalankar Institute of Technology
+                        </div>
+                        <p class="education-details">
+                            Focused on Data Structures, Algorithms, Operating Systems, DBMS, Web Development, and AI.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="card reveal" id="skills">
+                    <h3 class="card-title">
+                        <span class="card-icon">🛠️</span>
+                        Skills
+                    </h3>
+                    
+                    <div class="skills-container">
+                        <!-- Frontend -->
+                        <div>
+                            <div class="skill-category-title">
+                                <span>💻</span> Frontend
+                            </div>
+                            <div class="skill-pills">
+                                <span class="skill-pill">HTML</span>
+                                <span class="skill-pill">CSS</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">React</span>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div>
+                            <div class="skill-category-title">
+                                <span>⚙️</span> Backend
+                            </div>
+                            <div class="skill-pills">
+                                <span class="skill-pill">Node.js</span>
+                                <span class="skill-pill">Express</span>
+                            </div>
+                        </div>
+
+                        <!-- Databases & Tools -->
+                        <div>
+                            <div class="skill-category-title">
+                                <span>🗄️</span> Databases & Cloud
+                            </div>
+                            <div class="skill-pills">
+                                <span class="skill-pill">MongoDB</span>
+                                <span class="skill-pill">MySQL</span>
+                                <span class="skill-pill">Firebase</span>
+                            </div>
+                        </div>
+
+                        <!-- AI / Tools -->
+                        <div>
+                            <div class="skill-category-title">
+                                <span>🧠</span> AI & Tools
+                            </div>
+                            <div class="skill-pills">
+                                <span class="skill-pill">Machine Learning</span>
+                                <span class="skill-pill">SHAP</span>
+                                <span class="skill-pill">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">🚀 My Work</span>
+                <h2>Projects</h2>
+                <p>Featured projects highlighting full-stack engineering and system algorithms.</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1: AI Healthcare Platform (IN PROGRESS) -->
+                <div class="project-card reveal">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-tags-row">
+                                <span class="project-tag">🏥 Healthcare & AI</span>
+                                <span class="badge-status badge-progress">🚧 In Progress</span>
+                            </div>
+                            <h3>AI-Assisted Preventive Healthcare Platform</h3>
+                        </div>
+                        
+                        <p class="project-desc">
+                            Full-stack predictive healthcare system designed to forecast health risks using machine learning with multi-layer microservice architecture.
+                        </p>
+
+                        <div class="project-points-title">
+                            <span>📌</span> Key Features:
+                        </div>
+                        <ul class="project-points">
+                            <li><strong>ML Risk Prediction:</strong> Health risk prediction models integrated with SHAP explainability.</li>
+                            <li><strong>Doctor-Patient Portal:</strong> Consultation workflows and medical history management.</li>
+                            <li><strong>Appointment Booking:</strong> Automated scheduling for doctor consultations & lab tests.</li>
+                            <li><strong>Emergency Support:</strong> User-triggered real-time ambulance dispatch module.</li>
+                            <li><strong>Cloud Backend:</strong> Firebase authentication, role management, and real-time database.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">ML / SHAP</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <span class="status-pill-subtle">
+                                🔨 Under Active Development • Code Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Deadlock Detection Simulator -->
+                <div class="project-card reveal">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-tags-row">
+                                <span class="project-tag">⚙️ Operating Systems</span>
+                                <span class="badge-status badge-completed">✅ Live</span>
+                            </div>
+                            <h3>Deadlock Detection & Avoidance Simulator</h3>
+                        </div>
+                        
+                        <p class="project-desc">
+                            Interactive web application visualizing operating system deadlock detection and avoidance with dynamic graph rendering.
+                        </p>
+
+                        <div class="project-points-title">
+                            <span>📌</span> Key Features:
+                        </div>
+                        <ul class="project-points">
+                            <li><strong>Banker’s Algorithm:</strong> Safe state calculation and deadlock avoidance evaluation.</li>
+                            <li><strong>RAG Visualization:</strong> Real-time Resource Allocation Graph rendering.</li>
+                            <li><strong>Cycle Detection:</strong> Automated detection of circular wait states and process deadlocks.</li>
+                            <li><strong>Matrix Controls:</strong> Interactive allocation, max demand, and available resource vectors.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                            <span class="tech-tag">Graph Algorithms</span>
+                            <span class="tech-tag">Banker's Algorithm</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/YuktaPadekar" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                🐙 View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">📬 Get In Touch</span>
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out for opportunities, collaborations, or questions.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Links Grid -->
+                <div class="contact-cards-grid reveal">
+                    
+                    <!-- Email Card -->
+                    <a href="mailto:yuktapadekar@gmail.com" class="contact-card">
+                        <span class="contact-icon">✉️</span>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">yuktapadekar@gmail.com</span>
+                        <span class="contact-subtext">Send an email ↗</span>
+                    </a>
+
+                    <!-- GitHub Card -->
+                    <a href="https://github.com/YuktaPadekar" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <span class="contact-icon">🐙</span>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/YuktaPadekar</span>
+                        <span class="contact-subtext">View repositories ↗</span>
+                    </a>
+
+                    <!-- LinkedIn Card -->
+                    <a href="https://linkedin.com/in/yuktapadekar" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <span class="contact-icon">💼</span>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/yuktapadekar</span>
+                        <span class="contact-subtext">Connect on LinkedIn ↗</span>
+                    </a>
+                </div>
+
+                <!-- Direct Copy Box -->
+                <div class="email-box reveal">
+                    <div class="email-info">
+                        <div class="email-icon-circle">📩</div>
+                        <div class="email-text-group">
+                            <h4>Direct Email</h4>
+                            <p id="emailText">yuktapadekar@gmail.com</p>
+                        </div>
+                    </div>
+                    <button class="copy-btn" onclick="copyEmail()">
+                        📋 Copy Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span>✅</span> Email copied to clipboard!
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Yukta Padekar. Built with clean HTML, CSS & JavaScript.</p>
+            <a href="#home" class="back-to-top">
+                ↑ Top
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
