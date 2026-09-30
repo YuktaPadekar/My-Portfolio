@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let typingSpeed = 90;
+    let typingSpeed = 75;
 
     function typeRoles() {
         if (!typingElement) return;
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isDeleting) {
             typingElement.textContent = currentRole.substring(0, charIndex - 1);
             charIndex--;
-            typingSpeed = 45;
+            typingSpeed = 40;
         } else {
             typingElement.textContent = currentRole.substring(0, charIndex + 1);
             charIndex++;
